@@ -88,16 +88,15 @@ function glocal_networkwide_posts_module($parameters = []) {
     if($output == 'array') {
         
         // Return an array
-        //return $posts_list;
+        return $posts_list;
         
-        return '<pre>' . var_dump($posts_list) . '</pre>';
+        // For testing
+        //return '<pre>' . var_dump($posts_list) . '</pre>';
             
     } else {
         // CALL RENDER FUNCTION
         return render_html($posts_list, $settings);
         
-        // Return rendered HMTL
-        //return $rendered_html;
     }
 
 }
