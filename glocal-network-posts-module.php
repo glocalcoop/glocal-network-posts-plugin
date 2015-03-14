@@ -221,7 +221,7 @@ function get_sites_posts($site_id, $options_array) {
         if($postdetail['post_excerpt']) {
             $excerpt = $postdetail['post_excerpt'];
         } else {
-            $excerpt = custom_post_excerpt($post_id);
+            $excerpt = custom_post_excerpt($post_id, $length='15', $trailer=' ...');
         }
 
         $post_list[$prefix] = array(

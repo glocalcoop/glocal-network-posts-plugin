@@ -19,48 +19,44 @@
       width: 49.1211%; } }
 
 /* line 27, ../sass/style.scss */
-.highlights .network-posts-list,
-.highlights ul {
+.highlights ul.network-posts-list {
   height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   /* line 33, ../sass/style.scss */
-  .highlights .network-posts-list li,
-  .highlights ul li {
+  .highlights ul.network-posts-list li {
     background: #fff;
     padding: 8px 24px;
     margin-bottom: 2px; }
-  /* line 38, ../sass/style.scss */
-  .highlights .network-posts-list .post-title,
-  .highlights ul .post-title {
-    margin: 3px 0 -3px;
-    font-size: 22; }
-  /* line 43, ../sass/style.scss */
-  .highlights .network-posts-list .post-excerpt,
-  .highlights .network-posts-list .post-author,
-  .highlights ul .post-excerpt,
-  .highlights ul .post-author {
-    display: none; }
-  /* line 47, ../sass/style.scss */
-  .highlights .network-posts-list .blog-name,
-  .highlights .network-posts-list .post-date,
-  .highlights .network-posts-list .post-categories,
-  .highlights ul .blog-name,
-  .highlights ul .post-date,
-  .highlights ul .post-categories {
-    display: inline-block;
-    font-size: 12;
-    white-space: nowrap;
-    margin: 0 6px 0 0;
-    color: #757472; }
-    /* line 56, ../sass/style.scss */
-    .highlights .network-posts-list .blog-name a,
-    .highlights .network-posts-list .post-date a,
-    .highlights .network-posts-list .post-categories a,
-    .highlights ul .blog-name a,
-    .highlights ul .post-date a,
-    .highlights ul .post-categories a {
+    /* line 39, ../sass/style.scss */
+    .highlights ul.network-posts-list li .blog-name,
+    .highlights ul.network-posts-list li .post-date,
+    .highlights ul.network-posts-list li .post-categories,
+    .highlights ul.network-posts-list li .meta * {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 12;
+      white-space: nowrap;
+      margin: 0 6px 0 0;
       color: #757472; }
+      /* line 49, ../sass/style.scss */
+      .highlights ul.network-posts-list li .blog-name a,
+      .highlights ul.network-posts-list li .post-date a,
+      .highlights ul.network-posts-list li .post-categories a,
+      .highlights ul.network-posts-list li .meta * a {
+        color: #757472; }
+    /* line 53, ../sass/style.scss */
+    .highlights ul.network-posts-list li .post-title {
+      margin: 3px 0 -3px;
+      font-size: 22; }
+    /* line 58, ../sass/style.scss */
+    .highlights ul.network-posts-list li .post-excerpt,
+    .highlights ul.network-posts-list li .post-author {
+      display: none; }
+/* line 71, ../sass/style.scss */
+.highlights .entry-content ul {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

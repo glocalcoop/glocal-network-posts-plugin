@@ -24,43 +24,52 @@
 
 
 .highlights {
-    .network-posts-list,
-    ul {
-      height: 300px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      margin: 0;
-      li {
-        background: $white;
-        padding: $space-third $space;
-        margin-bottom: 2px;
-      }
-      .post-title {
-        margin: 3px 0 -3px;
-        //@include font-size($delta);
-        font-size: $delta;
-      }
-      .post-excerpt,
-      .post-author {
-        display: none;
-      }
-      .blog-name,
-      .post-date,
-      .post-categories {
-        display: inline-block;
-        //@include font-size($micro);
-        font-size: $micro;
-        white-space: nowrap;
-        margin: 0 $space-fourth 0 0;
-        color: $base4;
-        a {
-          color: $base4;
+    ul.network-posts-list {
+        height: 300px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        li {
+            background: $white;
+            padding: $space-third $space;
+            margin-bottom: 2px;
+            
+            
+            .blog-name,
+            .post-date,
+            .post-categories,
+            .meta * {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: $micro;
+                white-space: nowrap;
+                margin: 0 $space-fourth 0 0;
+                color: $base4;
+                a {
+                  color: $base4;
+                }
+            }
+            .post-title {
+                margin: 3px 0 -3px;
+                //@include font-size($delta);
+                font-size: $delta;
+              }
+            .post-excerpt,
+            .post-author {
+                display: none;
+            }
         }
-      }
+        
 
         //@media only screen and (max-width: $screen-medium) {}
 //        @include breakpoint(sm) {
 //          //@include span-columns(8);
 //      }
     }
+    
+    .entry-content ul {
+        padding: 0;
+    }
 }
+
